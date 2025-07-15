@@ -3,6 +3,8 @@ import { useTranslation } from 'react-i18next';
 import ChevronLeftIcon from './icons/ChevronLeftIcon';
 import ChevronRightIcon from './icons/ChevronRightIcon';
 
+const VISIBLE_ITEMS = 5;
+
 interface ComputerCategory {
   name: string;
   imageSrc: string;

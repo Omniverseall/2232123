@@ -1,0 +1,99 @@
+{
+  "topNav": {
+    "installment": "0% Muddatli to'lov",
+    "discounts": "Chegirmalar",
+    "giveaways": "O'yinlar",
+    "sitemap": "Sayt xaritasi",
+    "sellOnOlcha": "Olcha'da soting"
+  },
+  "header": {
+    "catalog": "Katalog",
+    "searchPlaceholder": "Katalog bo'yicha qidirish",
+    "compare": "Taqqoslash",
+    "favorites": "Sevimlilar",
+    "cart": "Savatcha",
+    "login": "Kirish",
+    "logout": "Chiqish"
+  },
+  "productCard": {
+    "buyInInstallments": "Muddatli to'lov"
+  },
+  "auth": {
+    "login": "Kirish",
+    "register": "Ro'yxatdan o'tish",
+    "email": "Email",
+    "password": "Parol",
+    "loginButton": "Kirish",
+    "createAccountButton": "Hisob yaratish",
+    "terms": "Davom etish orqali siz bizning <a href=\"#\" class=\"underline hover:text-[#E50027]\"> Maxfiylik siyosatimizga</a> va <a href=\"#\" class=\"underline hover:text-[#E50027]\"> Foydalanish shartlarimizga</a> rozilik bildirasiz.",
+    "error": {
+      "allFieldsRequired": "Iltimos, barcha maydonlarni to'ldiring",
+      "emailTaken": "Bu email allaqachon band",
+      "invalidCredentials": "Noto'g'ri email yoki parol",
+      "default": "Xatolik yuz berdi. Qaytadan urinib ko'ring."
+    }
+  },
+  "titles": {
+    "appleTech": "Apple texnikasi",
+    "brands": "Brendlar",
+    "news": "Yangiliklar"
+  },
+  "common": {
+    "viewAll": "HAMMASINI KO'RISH",
+    "showAll": "Hammasini ko'rsatish"
+  },
+  "productOfTheDay": {
+    "title": "Kun mahsuloti"
+  },
+  "infoText": {
+    "section1": {
+      "heading": "Marketpleys - Olcha xaridlar uchun qulay gipermarket",
+      "paragraph": "Har qanday insonning qulay hayoti va farovon turmushini zamonaviy texnikasiz tasavvur qilib bo'lmaydi. Ish va shaxsiy masalalar - <a href=\"#\" class=\"text-blue-600 hover:underline\">smartfonda</a>, sevimli filmlar va seriallar – televizorda, tozalash – changyutgichda, pishirish – plita, pech va boshqa ko'plab kichikroq, ammo kam bo'lmagan foydali qurilmalarda. Bundan tashqari, texnologiyalar rivojlanmoqda va shuning uchun elektronika muntazam yangilanishni talab qiladi, men yangi modellarni sinab ko'rmoqchiman yoki mavjud qurilmalarning quvvati etarli emas. Shu munosabat bilan maishiy texnika sotib olish uchun ishonchli joyga ega bo'lish foydalidir. Agar siz hali o'zingiz uchun birini topmagan bo'lsangiz, biz sizni saytimizda bir necha daqiqa qolishga taklif qilamiz. Ishonamizki, vaqtingizni bekorga sarflamaganingizga ishonch hosil qilasiz."
+    },
+    "section2": {
+      "heading": "O'zbekistonda texnikani qayerdan sotib olish mumkin?",
+      "paragraph": "Mamlakatda elektronika sotib olish uchun joylar ko'p, lekin mijozga assortiment, narx va buyurtma berishning umumiy shartlari mos kelishi muhim. Biz nimani taklif qilamiz:"
+    }
+  },
+  "footer": {
+    "appPromo": {
+      "heading": "Bizning mobil ilovamiz AppGallery, App Store va Google Play'da mavjud"
+    },
+    "supportPhone": "Qo'llab-quvvatlash telefoni",
+    "address": "Qozitarnov, Toshkent",
+    "information": "Ma'lumot",
+    "about": "Kompaniya haqida",
+    "vacancies": "Bo'sh ish o'rinlari",
+    "publicOffer": "Ommaviy oferta",
+    "returns": "Tovarlarni qaytarish va almashtirish",
+    "installmentTerms": "Muddatli to'lov shartlari",
+    "ecoFriendly": "Ekologik toza",
+    "privacyPolicy": "Shaxsiy ma'lumotlarni qayta ishlash siyosati",
+    "paymentAndDelivery": "Tovarlarni to'lash va yetkazib berish",
+    "bonuses": "Bonuslar va aksiyalar",
+    "sellerOffer": "Olcha.uz'da tovar sotuvchilar uchun oferta",
+    "copyright": "© 2017-2025. \"Olcha store\" MChJ",
+    "privacyPolicyLink": "Maxfiylik siyosati"
+  },
+  "banners": {
+    "affordableConvenienceAlt": "Qulaylik hamyonbop narxda",
+    "beautyHealthAlt": "Go'zallik va salomatlik",
+    "proCamerasAlt": "Professional kameralar",
+    "repairToolsAlt": "Ta'mirlash asboblari",
+    "kukmaraAlt": "Kukmara Ishonchli Tanlov",
+    "sportsGoodsAlt": "Sport mollari",
+    "householdAppliancesAlt": "Maishiy texnika",
+    "gamingAlt": "Geymerlar uchun",
+    "beautyTech": "Go'zallik uchun texnika",
+    "cosmetics": "Kosmetika va parfyumeriya",
+    "kitchenNeeds": "Oshxona uchun barcha zarur narsalar",
+    "fullKitchenRange": "Sizning oshxonangiz uchun to'liq assortiment",
+    "repairToolsBanner": "Ta'mirlash asboblari",
+    "toolsSet": "Asboblar to'plami",
+    "modernTvs": "Zamonaviy televizorlar",
+    "headphonesAcoustics": "Quloqchinlar va akustika",
+    "conditioners": "Konditsionerlar",
+    "waterCoolers": "Suv sovutgichlari",
+    "generators": "Generatorlar"
+  }
+}

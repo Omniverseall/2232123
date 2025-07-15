@@ -1,28 +1,30 @@
 import React, { useState, useEffect } from 'react';
+import { useTranslation } from 'react-i18next';
 import ChevronLeftIcon from './icons/ChevronLeftIcon';
 import ChevronRightIcon from './icons/ChevronRightIcon';
 
 interface TechCategory {
   name: string;
   imageSrc: string;
+  key: string;
 }
 
-const techCategories: TechCategory[] = [
-  { name: 'Телевизоры, фото-видео и аудио', imageSrc: 'https://olcha.uz/image/132x132/category/cdn_1/2024-08-21/oiPUxRUwlWSVgj1FU7pvax6ett2xvxiL1EBwKPZVR4gVID7tK8l2eI1d1LZk.png' },
-  { name: 'Ноутбуки, принтеры,', imageSrc: 'https://olcha.uz/image/132x132/category/LMk7YuQAzKqsUIBDfr4jRA2IEFsLPsyFkWAWFHYkwlQZ8WRVvWut5Heb8Dju.png' },
-  { name: 'Смартфоны, телефоны, гаджеты,', imageSrc: 'https://olcha.uz/image/132x132/category/M90cCGAT8ARmlnxJzt5sH4cTD4eBUjWocRW36j69zghIlMA6leRkjL9mvoBr.png' },
-  { name: 'Бытовая техника', imageSrc: 'https://olcha.uz/image/132x132/category/gTEdspBADkaKoLWlt6Tyc1XrGeJAiyfd8zwwP52GBOFDtAVnVtj4jDOwbCMz.png' },
-  { name: 'Все для кухни', imageSrc: 'https://olcha.uz/image/132x132/category/3OqvliYxYnrZoZKX7ZSuIyAPCC3C4lp11u45G04T8RbYWan6GDrMBB0gwre1.png' },
-  { name: 'Спорт товары', imageSrc: 'https://olcha.uz/image/132x132/category/opA1z5cMyRtEZW6Oa02AXZnH0l74jiTNDA10QXTKZXS8fsoYNuPAmjID5xUT.png' },
-  { name: 'Красота и здоровье', imageSrc: 'https://olcha.uz/image/132x132/category/v35JbK5fmf34Hl86Leu5QundGiGyP4BmhQ8olwbUdtUFZms0JWA5pp46yBSp.png' },
+const TechCategorySwiper: React.FC = () => {
+  const { t } = useTranslation();
+  const [currentIndex, setCurrentIndex] = useState(VISIBLE_ITEMS);
+  const [isTransitioning, setIsTransitioning] = useState(true);
+
+  const techCategories: TechCategory[] = [
+  { name: t('techCategories.tvAudio'), key: 'tvAudio', imageSrc: 'https://olcha.uz/image/132x132/category/cdn_1/2024-08-21/oiPUxRUwlWSVgj1FU7pvax6ett2xvxiL1EBwKPZVR4gVID7tK8l2eI1d1LZk.png' },
+  { name: t('techCategories.laptopsPrinters'), key: 'laptopsPrinters', imageSrc: 'https://olcha.uz/image/132x132/category/LMk7YuQAzKqsUIBDfr4jRA2IEFsLPsyFkWAWFHYkwlQZ8WRVvWut5Heb8Dju.png' },
+  { name: t('techCategories.smartphonesGadgets'), key: 'smartphonesGadgets', imageSrc: 'https://olcha.uz/image/132x132/category/M90cCGAT8ARmlnxJzt5sH4cTD4eBUjWocRW36j69zghIlMA6leRkjL9mvoBr.png' },
+  { name: t('techCategories.appliances'), key: 'appliances', imageSrc: 'https://olcha.uz/image/132x132/category/gTEdspBADkaKoLWlt6Tyc1XrGeJAiyfd8zwwP52GBOFDtAVnVtj4jDOwbCMz.png' },
+  { name: t('techCategories.kitchen'), key: 'kitchen', imageSrc: 'https://olcha.uz/image/132x132/category/3OqvliYxYnrZoZKX7ZSuIyAPCC3C4lp11u45G04T8RbYWan6GDrMBB0gwre1.png' },
+  { name: t('techCategories.sports'), key: 'sports', imageSrc: 'https://olcha.uz/image/132x132/category/opA1z5cMyRtEZW6Oa02AXZnH0l74jiTNDA10QXTKZXS8fsoYNuPAmjID5xUT.png' },
+  { name: t('techCategories.beauty'), key: 'beauty', imageSrc: 'https://olcha.uz/image/132x132/category/v35JbK5fmf34Hl86Leu5QundGiGyP4BmhQ8olwbUdtUFZms0JWA5pp46yBSp.png' },
 ];
 
 const cardBackgroundUrl = 'https://olcha.uz/image/original/homePage/cdn_1/2024-07-25/6l61foS3NxuhczhSNmbSapAGKy2AwXpgfu1x1KaTmWUxBQqHar8rNLmzLPyW.jpg';
-const VISIBLE_ITEMS = 7;
-
-const TechCategorySwiper: React.FC = () => {
-  const [currentIndex, setCurrentIndex] = useState(VISIBLE_ITEMS);
-  const [isTransitioning, setIsTransitioning] = useState(true);
 
   const items = [...techCategories.slice(-VISIBLE_ITEMS), ...techCategories, ...techCategories.slice(0, VISIBLE_ITEMS)];
 

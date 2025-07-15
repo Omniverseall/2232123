@@ -1,28 +1,30 @@
 import React, { useState, useEffect } from 'react';
+import { useTranslation } from 'react-i18next';
 import ChevronLeftIcon from './icons/ChevronLeftIcon';
 import ChevronRightIcon from './icons/ChevronRightIcon';
 
 interface ComputerCategory {
   name: string;
   imageSrc: string;
+  key: string;
 }
 
-const computerCategories: ComputerCategory[] = [
-  { name: 'Ноутбуки', imageSrc: 'https://olcha.uz/image/132x132/category/Zzb97hGmwgC8EpGI3uVEwgdtvf4k9Wx404mtejcvF2qvbTSIA6HMben2CDJL.png' },
-  { name: 'Мониторы', imageSrc: 'https://olcha.uz/image/132x132/category/b9ndmxu7R1o0rNIfa66oTO5C8yGLz0rqSKPVIgsNOXf11pmxhJkp7zTOCZet.png' },
-  { name: 'Компьютерные компоненты', imageSrc: 'https://olcha.uz/image/132x132/category/Iq6S7Cpq55aiyWLPqwZlQ2xUfoflhJEdZMA6134N6LNtL6vm1T5Gx0HK7zHD.png' },
-  { name: 'Оргтехника', imageSrc: 'https://olcha.uz/image/132x132/category/rtlaqqb3RCtkWwTGNzGuP7XYTQKXEwlhYcOXjQnb2rv0l1pkM2KaJO6hYDrx.png' },
-  { name: 'Сумки и рюкзаки для ноутбуков', imageSrc: 'https://olcha.uz/image/132x132/category/tyKzuzHsiwtcG0EOir6M99veVVAqq5e5Pl2XjzbcG6qTHmIHqkBn6QWrJFAs.png' },
-  { name: 'Сетевое оборудование', imageSrc: 'https://olcha.uz/image/132x132/category/ZwXYo5i5foFOx0KeoI1j7gWfkVZQmkcd0rvUYHg1022ZxDgIh2aDSGns2JZo.png' },
-  { name: 'Моноблок', imageSrc: 'https://olcha.uz/image/132x132/category/mO9VmUuKmuNeXQUfCW9Zj1XcVsYrt1NcZXrAKEcmZhvyw2RnLKcfnkuTRceb.png' },
+const ComputerCategorySwiper: React.FC = () => {
+  const { t } = useTranslation();
+  const [currentIndex, setCurrentIndex] = useState(VISIBLE_ITEMS);
+  const [isTransitioning, setIsTransitioning] = useState(true);
+
+  const computerCategories: ComputerCategory[] = [
+  { name: t('computerCategories.laptops'), key: 'laptops', imageSrc: 'https://olcha.uz/image/132x132/category/Zzb97hGmwgC8EpGI3uVEwgdtvf4k9Wx404mtejcvF2qvbTSIA6HMben2CDJL.png' },
+  { name: t('computerCategories.monitors'), key: 'monitors', imageSrc: 'https://olcha.uz/image/132x132/category/b9ndmxu7R1o0rNIfa66oTO5C8yGLz0rqSKPVIgsNOXf11pmxhJkp7zTOCZet.png' },
+  { name: t('computerCategories.components'), key: 'components', imageSrc: 'https://olcha.uz/image/132x132/category/Iq6S7Cpq55aiyWLPqwZlQ2xUfoflhJEdZMA6134N6LNtL6vm1T5Gx0HK7zHD.png' },
+  { name: t('computerCategories.office'), key: 'office', imageSrc: 'https://olcha.uz/image/132x132/category/rtlaqqb3RCtkWwTGNzGuP7XYTQKXEwlhYcOXjQnb2rv0l1pkM2KaJO6hYDrx.png' },
+  { name: t('computerCategories.bags'), key: 'bags', imageSrc: 'https://olcha.uz/image/132x132/category/tyKzuzHsiwtcG0EOir6M99veVVAqq5e5Pl2XjzbcG6qTHmIHqkBn6QWrJFAs.png' },
+  { name: t('computerCategories.network'), key: 'network', imageSrc: 'https://olcha.uz/image/132x132/category/ZwXYo5i5foFOx0KeoI1j7gWfkVZQmkcd0rvUYHg1022ZxDgIh2aDSGns2JZo.png' },
+  { name: t('computerCategories.monoblock'), key: 'monoblock', imageSrc: 'https://olcha.uz/image/132x132/category/mO9VmUuKmuNeXQUfCW9Zj1XcVsYrt1NcZXrAKEcmZhvyw2RnLKcfnkuTRceb.png' },
 ];
 
 const cardBackgroundUrl = 'https://olcha.uz/image/original/homePage/cdn_1/2024-07-25/6l61foS3NxuhczhSNmbSapAGKy2AwXpgfu1x1KaTmWUxBQqHar8rNLmzLPyW.jpg';
-const VISIBLE_ITEMS = 7;
-
-const ComputerCategorySwiper: React.FC = () => {
-  const [currentIndex, setCurrentIndex] = useState(VISIBLE_ITEMS);
-  const [isTransitioning, setIsTransitioning] = useState(true);
 
   const items = [...computerCategories.slice(-VISIBLE_ITEMS), ...computerCategories, ...computerCategories.slice(0, VISIBLE_ITEMS)];
 

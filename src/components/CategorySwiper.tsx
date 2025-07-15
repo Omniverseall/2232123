@@ -1,81 +1,101 @@
 import React, { useRef } from 'react';
+import { useTranslation } from 'react-i18next';
 import ChevronLeftIcon from './icons/ChevronLeftIcon';
 import ChevronRightIcon from './icons/ChevronRightIcon';
 
 interface Category {
   name: string;
   image: string;
+  key: string;
 }
 
-const categories: Category[] = [
+const CategorySwiper: React.FC = () => {
+  const { t } = useTranslation();
+  const scrollRef = useRef<HTMLDivElement>(null);
+
+  const categories: Category[] = [
   {
-    name: "Телевизоры, фото-видео и аудио",
+    name: t('categories.tvAudioVideo'),
+    key: "tvAudioVideo",
     image: "https://olcha.uz/image/128x128/category/cdn_1/2024-05-28/B1NA6mAiwsmrVapt6VbrdvPPIllRV2EnjtNEuUvSPhHoZ2beOWGv616dhaKj.png"
   },
   {
-    name: "Смартфоны, телефоны, гаджеты",
+    name: t('categories.smartphones'),
+    key: "smartphones",
     image: "https://olcha.uz/image/128x128/category/cdn_1/2024-05-28/K83YTs4SqPeI3Ohx1lN0bDnbiV1Z9EnwZHMr2HsjIlDhmT48cBgn4C0Ve9Br.png"
   },
   {
-    name: "Все для кухни",
+    name: t('categories.kitchen'),
+    key: "kitchen",
     image: "https://olcha.uz/image/128x128/category/cdn_1/2024-05-28/eCJj0q3ixqzqS3xvZhnMSQnYC1SLTnLB475I5l5ltz6rxi9rUmYauATe5Pa6.png"
   },
   {
-    name: "Красота и здоровье",
+    name: t('categories.beautyHealth'),
+    key: "beautyHealth",
     image: "https://olcha.uz/image/128x128/category/cdn_1/2024-05-28/Lio8FefcAG352o0hPeqHDkd7TVlr2NQ4ljQAQziRlTjWOz08RiB1fncFbe2D.png"
   },
   {
-    name: "Все для офиса, дома и сада",
+    name: t('categories.officeHomeGarden'),
+    key: "officeHomeGarden",
     image: "https://olcha.uz/image/128x128/category/cdn_1/2024-05-28/ZiWkDeTfCnCNHDWZnu0xXtxwkZ6Qe3embHveXzJVRXfdnaJB5sRsnJiU22vS.png"
   },
   {
-    name: "Мебель",
+    name: t('categories.furniture'),
+    key: "furniture",
     image: "https://olcha.uz/image/128x128/category/cdn_1/2024-05-28/adqzcIrhpWBLdv7My9MHp7DblhCNpQg2KkpsoeRQZdvKe5OR01jO2oXkKgcn.png"
   },
   {
-    name: "Все для ремонта и строительства",
+    name: t('categories.repairConstruction'),
+    key: "repairConstruction",
     image: "https://olcha.uz/image/128x128/category/cdn_1/2024-05-28/ioFNdT48mMJa0ARcbtJXbnLZN8CUB9x09SFDzFv06MJXreLROUEhytRsKavH.png"
   },
   {
-    name: "Подарки и сувениры",
+    name: t('categories.gifts'),
+    key: "gifts",
     image: "https://olcha.uz/image/128x128/category/cdn_1/2024-05-28/cBKUy2UyHjgTu7n0E4ZEtbo1Priwsl5oynQrRtxl6MixwxwknCUbTfyDJiKx.png"
   },
   {
-    name: "Ноутбуки, принтеры, компьютеры",
+    name: t('categories.laptopsComputers'),
+    key: "laptopsComputers",
     image: "https://olcha.uz/image/128x128/category/cdn_1/2024-05-28/n4H7uKvN0pFwsYXSs66rsdUdHxGiRCWn8JVt9O0Qt1ecNl1fOEDJ7j0BHj81.png"
   },
   {
-    name: "Бытовая техника",
+    name: t('categories.appliances'),
+    key: "appliances",
     image: "https://olcha.uz/image/128x128/category/cdn_1/2024-05-28/yfGs0HUuX5wKnXwPbOyEswpZFzzGhmHdpptTriBTKm01HUxMqTBEg1QA2CQr.png"
   },
   {
-    name: "Спорт товары",
+    name: t('categories.sports'),
+    key: "sports",
     image: "https://olcha.uz/image/128x128/category/cdn_1/2024-05-28/D1UNIE2gMBYHkx9XQl452O6I2jtQOpD4kvhOWQCtr9fuPliQWVSAkN9YXjiQ.png"
   },
   {
-    name: "Автотовары",
+    name: t('categories.auto'),
+    key: "auto",
     image: "https://olcha.uz/image/128x128/category/cdn_1/2024-05-28/xrGNIS4zILNfb5qMXC0nvDLo09QuwdrdXYEKqn7UOEI9PndrjYR1BNX6CQbA.png"
   },
   {
-    name: "Игрушки и товары для детей",
+    name: t('categories.toys'),
+    key: "toys",
     image: "https://olcha.uz/image/128x128/category/cdn_1/2024-05-28/e6S4NLdIceYAv1zDvwHPVHFWSEMMgUxMwbOjThhsguSxVUKTY6yKbXvwOJ6M.png"
   },
   {
-    name: "Для геймеров",
+    name: t('categories.gaming'),
+    key: "gaming",
     image: "https://olcha.uz/image/128x128/category/cdn_1/2024-05-28/H36mM5MMLXtOjeOWB3Qm4FVp2ePbeijqE7VciIfLRsU5E4AAoPmf9avFASAg.png"
   },
   {
-    name: "Электротранспорт",
+    name: t('categories.transport'),
+    key: "transport",
     image: "https://olcha.uz/image/128x128/category/cdn_1/2024-05-28/ffn8LREBuqMNdbVFBdddB9BtV9eUM3IygL94CozDRxgwgjQiAyzfPtyWWkQe.png"
   },
   {
-    name: "Предложение от Olcha",
+    name: t('categories.olchaOffer'),
+    key: "olchaOffer",
     image: "https://olcha.uz/image/128x128/category/cdn_1/2025-07-05/fGTapfZMA233dXa0tw6Xv0ZljhH33B2BJS35JCMtoNr2txOwAlPrE9nPqfMq.png"
   }
 ];
 
-const CategorySwiper: React.FC = () => {
-  const scrollRef = useRef<HTMLDivElement>(null);
 
   const scroll = (direction: 'left' | 'right') => {
     if (scrollRef.current) {

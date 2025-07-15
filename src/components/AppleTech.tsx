@@ -1,5 +1,6 @@
 // File: src/components/AppleTech.tsx
 import React from 'react';
+import { useTranslation } from 'react-i18next';
 
 interface AppleProduct {
   name: string;
@@ -50,11 +51,12 @@ const products = {
 };
 
 const AppleTech: React.FC = () => {
+  const { t } = useTranslation();
   return (
     <div className="max-w-screen-2xl mx-auto px-4 py-6 bg-white dark:bg-gray-800 rounded-2xl">
         <div className="flex justify-between items-center mb-6">
-            <h2 className="text-3xl font-bold text-gray-900 dark:text-gray-200">Техника Apple</h2>
-            <a href="#" className="text-red-500 dark:text-red-400 font-semibold text-lg">ПОСМОТРЕТЬ ВСЕ</a>
+            <h2 className="text-3xl font-bold text-gray-900 dark:text-gray-200">{t('titles.appleTech')}</h2>
+            <a href="#" className="text-red-500 dark:text-red-400 font-semibold text-lg">{t('common.viewAll')}</a>
         </div>
 
         <div className="grid grid-cols-4 grid-rows-2 gap-6">

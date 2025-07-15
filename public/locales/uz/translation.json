@@ -1,0 +1,218 @@
+{
+  "topNav": {
+    "installment": "0% Muddatli to'lov",
+    "discounts": "Chegirmalar",
+    "giveaways": "O'yinlar",
+    "sitemap": "Sayt xaritasi",
+    "sellOnOlcha": "Olcha'da soting"
+  },
+  "header": {
+    "catalog": "Katalog",
+    "searchPlaceholder": "Katalog bo'yicha qidirish",
+    "compare": "Taqqoslash",
+    "favorites": "Sevimlilar",
+    "cart": "Savatcha",
+    "login": "Kirish",
+    "logout": "Chiqish"
+  },
+  "productCard": {
+    "buyInInstallments": "Muddatli to'lov"
+  },
+  "auth": {
+    "login": "Kirish",
+    "register": "Ro'yxatdan o'tish",
+    "email": "Email",
+    "password": "Parol",
+    "loginButton": "Kirish",
+    "createAccountButton": "Hisob yaratish",
+    "terms": "Davom etish orqali siz bizning <a href=\"#\" class=\"underline hover:text-[#E50027]\"> Maxfiylik siyosatimizga</a> va <a href=\"#\" class=\"underline hover:text-[#E50027]\"> Foydalanish shartlarimizga</a> rozilik bildirasiz.",
+    "error": {
+      "allFieldsRequired": "Iltimos, barcha maydonlarni to'ldiring",
+      "emailTaken": "Bu email allaqachon band",
+      "invalidCredentials": "Noto'g'ri email yoki parol",
+      "default": "Xatolik yuz berdi. Qaytadan urinib ko'ring."
+    }
+  },
+  "titles": {
+    "appleTech": "Apple texnikasi",
+    "brands": "Brendlar",
+    "news": "Yangiliklar",
+    "affordableConvenience": "Hamyonbop narxda qulaylik",
+    "beautyAndHealth": "Go'zallik va salomatlik",
+    "gamingAndComputers": "Geymerlar uchun",
+    "householdAppliances": "Maishiy texnika",
+    "proCameras": "Professional kameralar",
+    "sportsGoods": "Sport tovarlari",
+    "kukmaraSelection": "Kukmara Ishonchli Tanlov",
+    "repairTools": "Ta'mirlash va qurilish asboblari",
+    "seasonalDeals": "Mavsumiy chegirmalar",
+    "installmentDeals": "Muddatli to'lov"
+  },
+  "common": {
+    "viewAll": "HAMMASINI KO'RISH",
+    "showAll": "Hammasini ko'rsatish",
+    "sum": "so'm",
+    "months": "oy",
+    "installmentFormat": "{{amount}} so'm x {{months}} oy"
+  },
+  "productOfTheDay": {
+    "title": "Kun mahsuloti"
+  },
+  "categories": {
+    "tvAudioVideo": "Televizorlar, foto-video va audio",
+    "smartphones": "Smartfonlar, telefonlar, gadjetlar",
+    "kitchen": "Oshxona uchun hamma narsa",
+    "beautyHealth": "Go'zallik va salomatlik",
+    "officeHomeGarden": "Ofis, uy va bog' uchun hamma narsa",
+    "furniture": "Mebel",
+    "repairConstruction": "Ta'mirlash va qurilish uchun hamma narsa",
+    "gifts": "Sovg'alar va esdaliklar",
+    "laptopsComputers": "Noutbuklar, printerlar, kompyuterlar",
+    "appliances": "Maishiy texnika",
+    "sports": "Sport tovarlari",
+    "auto": "Avto tovarlari",
+    "toys": "O'yinchoqlar va bolalar tovarlari",
+    "gaming": "Geymerlar uchun",
+    "transport": "Elektr transport",
+    "olchaOffer": "Olcha taklifnomasi"
+  },
+  "autoCategories": {
+    "bodyParts": "Kuzov qismlari",
+    "otherParts": "Boshqa avto ehtiyot qismlari",
+    "audio": "Avtomobil audio",
+    "videoRadar": "Videoregistratorlar va Radar-detektorlar",
+    "accessories": "Avto aksessuarlar",
+    "washers": "Mini yuvish mashinalari va yuqori bosimli nasoslar",
+    "steering": "Avto rul"
+  },
+  "computerCategories": {
+    "laptops": "Noutbuklar",
+    "monitors": "Monitorlar",
+    "components": "Kompyuter komponentlari",
+    "office": "Ofis texnikasi",
+    "bags": "Noutbuk sumkalari va ryukzaklar",
+    "network": "Tarmoq uskunalari",
+    "monoblock": "Monoblok"
+  },
+  "techCategories": {
+    "tvAudio": "Televizorlar, foto-video va audio",
+    "laptopsPrinters": "Noutbuklar, printerlar,",
+    "smartphonesGadgets": "Smartfonlar, telefonlar, gadjetlar,",
+    "appliances": "Maishiy texnika",
+    "kitchen": "Oshxona uchun hamma narsa",
+    "sports": "Sport tovarlari",
+    "beauty": "Go'zallik va salomatlik"
+  },
+  "brands": {
+    "apple": {
+      "name": "Apple",
+      "categories": {
+        "acoustics": "Akustika",
+        "mediaPlayer": "Media pleer",
+        "vrGlasses": "Virtual reallik ko'zoynaklari"
+      }
+    },
+    "samsung": {
+      "name": "Samsung",
+      "categories": {
+        "tvs": "Televizorlar",
+        "monitors": "Monitorlar",
+        "ssd": "SSD xotira qurilmalari"
+      }
+    },
+    "sony": {
+      "name": "Sony",
+      "categories": {
+        "tvs": "Televizorlar",
+        "musicSystems": "Musiqa tizimlari",
+        "acoustics": "Akustika"
+      }
+    },
+    "versace": {
+      "name": "Versace",
+      "categories": {
+        "womenPerfume": "Ayollar parfyumeriyasi",
+        "menPerfume": "Erkaklar parfyumeriyasi",
+        "perfumeSets": "Parfyumeriya to'plamlari"
+      }
+    },
+    "xiaomi": {
+      "name": "Xiaomi",
+      "categories": {
+        "tvs": "Televizorlar",
+        "acoustics": "Akustika",
+        "cameras": "Video kuzatuv kameralari"
+      }
+    },
+    "lg": {
+      "name": "LG",
+      "categories": {
+        "tvs": "Televizorlar",
+        "monitors": "Monitorlar",
+        "washingMachines": "Kir yuvish mashinalari"
+      }
+    },
+    "allProducts": "BARCHA MAHSULOTLAR"
+  },
+  "news": {
+    "title": "Yangiliklar",
+    "viewsLabel": "ko'rishlar"
+  },
+  "infoText": {
+    "section1": {
+      "heading": "Marketpleys - Olcha xaridlar uchun qulay gipermarket",
+      "paragraph": "Har qanday insonning qulay hayoti va farovon turmushini zamonaviy texnikasiz tasavvur qilib bo'lmaydi. Ish va shaxsiy masalalar - <a href=\"#\" class=\"text-blue-600 hover:underline\">smartfonda</a>, sevimli filmlar va seriallar – televizorda, tozalash – changyutgichda, pishirish – plita, pech va boshqa ko'plab kichikroq, ammo kam bo'lmagan foydali qurilmalarda. Bundan tashqari, texnologiyalar rivojlanmoqda va shuning uchun elektronika muntazam yangilanishni talab qiladi, men yangi modellarni sinab ko'rmoqchiman yoki mavjud qurilmalarning quvvati etarli emas. Shu munosabat bilan maishiy texnika sotib olish uchun ishonchli joyga ega bo'lish foydalidir. Agar siz hali o'zingiz uchun birini topmagan bo'lsangiz, biz sizni saytimizda bir necha daqiqa qolishga taklif qilamiz. Ishonamizki, vaqtingizni bekorga sarflamaganingizga ishonch hosil qilasiz."
+    },
+    "section2": {
+      "heading": "O'zbekistonda texnikani qayerdan sotib olish mumkin?",
+      "paragraph": "Mamlakatda elektronika sotib olish uchun joylar ko'p, lekin mijozga assortiment, narx va buyurtma berishning umumiy shartlari mos kelishi muhim. Biz nimani taklif qilamiz:"
+    }
+  },
+  "footer": {
+    "appPromo": {
+      "heading": "Bizning mobil ilovamiz AppGallery, App Store va Google Play'da mavjud"
+    },
+    "supportPhone": "Qo'llab-quvvatlash telefoni",
+    "address": "Qozitarnov, Toshkent",
+    "email": "info@olcha.uz",
+    "information": "Ma'lumot",
+    "about": "Kompaniya haqida",
+    "vacancies": "Bo'sh ish o'rinlari",
+    "publicOffer": "Ommaviy oferta",
+    "returns": "Tovarlarni qaytarish va almashtirish",
+    "installmentTerms": "Muddatli to'lov shartlari",
+    "ecoFriendly": "Ekologik toza",
+    "privacyPolicy": "Shaxsiy ma'lumotlarni qayta ishlash siyosati",
+    "paymentAndDelivery": "Tovarlarni to'lash va yetkazib berish",
+    "bonuses": "Bonuslar va aksiyalar",
+    "sellerOffer": "Olcha.uz'da tovar sotuvchilar uchun oferta",
+    "copyright": "© 2017-2025. \"Olcha store\" MChJ",
+    "privacyPolicyLink": "Maxfiylik siyosati"
+  },
+  "banners": {
+    "affordableConvenienceAlt": "Hamyonbop narxda qulaylik",
+    "beautyHealthAlt": "Go'zallik va salomatlik",
+    "proCamerasAlt": "Professional kameralar",
+    "repairToolsAlt": "Ta'mirlash asboblari",
+    "kukmaraAlt": "Kukmara Ishonchli Tanlov",
+    "sportsGoodsAlt": "Sport tovarlari",
+    "householdAppliancesAlt": "Maishiy texnika",
+    "gamingAlt": "Geymerlar uchun",
+    "beautyTech": "Go'zallik uchun texnika",
+    "cosmetics": "Kosmetika va parfyumeriya",
+    "kitchenNeeds": "Oshxona uchun barcha zarur narsalar",
+    "fullKitchenRange": "Sizning oshxonangiz uchun to'liq assortiment",
+    "repairToolsBanner": "Ta'mirlash asboblari",
+    "toolsSet": "Asboblar to'plami",
+    "modernTvs": "Zamonaviy televizorlar",
+    "headphonesAcoustics": "Quloqchinlar va akustika",
+    "conditioners": "Konditsionerlar",
+    "waterCoolers": "Suv sovutgichlari",
+    "generators": "Generatorlar"
+  },
+  "theme": {
+    "light": "Yorug'",
+    "dark": "Qorong'u",
+    "system": "Tizim"
+  }
+}

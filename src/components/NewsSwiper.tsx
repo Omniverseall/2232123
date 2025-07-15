@@ -1,5 +1,6 @@
 // File: src/components/NewsSwiper.tsx
 import React, { useState, useEffect } from 'react';
+import { useTranslation } from 'react-i18next';
 import ChevronLeftIcon from './icons/ChevronLeftIcon';
 import ChevronRightIcon from './icons/ChevronRightIcon';
 
@@ -50,6 +51,7 @@ const newsData: NewsArticle[] = [
 ];
 
 const NewsSwiper: React.FC = () => {
+    const { t } = useTranslation();
     const [currentIndex, setCurrentIndex] = useState(1);
     const [isTransitioning, setIsTransitioning] = useState(true);
     const items = [newsData[newsData.length - 1], ...newsData, newsData[0]];
@@ -78,9 +80,9 @@ const NewsSwiper: React.FC = () => {
     return (
         <div className="max-w-screen-2xl mx-auto px-4 py-6">
             <div className="flex justify-between items-center mb-6">
-                <h2 className="text-3xl font-bold text-gray-900 dark:text-gray-200">Новости</h2>
+                <h2 className="text-3xl font-bold text-gray-900 dark:text-gray-200">{t('news.title')}</h2>
                 <a href="#" className="text-red-500 dark:text-red-400 font-semibold text-lg flex items-center group">
-                    <span>ПОСМОТРЕТЬ ВСЕ</span>
+                    <span>{t('common.viewAll')}</span>
                     <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 ml-1 group-hover:translate-x-1 transition-transform" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2.5} d="M9 5l7 7-7 7" />
                     </svg>
@@ -102,7 +104,7 @@ const NewsSwiper: React.FC = () => {
                                                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" />
                                                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z" />
                                                 </svg>
-                                                {article.views}
+                                                {article.views} {t('news.viewsLabel')}
                                             </span>
                                         </div>
                                         <h3 className="font-bold text-lg mb-2 text-gray-900 dark:text-gray-200 group-hover:text-red-500 transition-colors h-14 overflow-hidden">{article.title}</h3>

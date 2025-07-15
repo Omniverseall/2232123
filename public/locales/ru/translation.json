@@ -1,0 +1,218 @@
+{
+  "topNav": {
+    "installment": "0% Рассрочка",
+    "discounts": "Скидки",
+    "giveaways": "Розыгрыши",
+    "sitemap": "Карта сайта",
+    "sellOnOlcha": "Продавайте на olcha"
+  },
+  "header": {
+    "catalog": "Каталог",
+    "searchPlaceholder": "Поиск по каталогу",
+    "compare": "Сравнение",
+    "favorites": "Избранные",
+    "cart": "Корзина",
+    "login": "Войти",
+    "logout": "Выйти"
+  },
+  "productCard": {
+    "buyInInstallments": "В рассрочку"
+  },
+  "auth": {
+    "login": "Вход",
+    "register": "Регистрация",
+    "email": "Email",
+    "password": "Пароль",
+    "loginButton": "Войти",
+    "createAccountButton": "Создать аккаунт",
+    "terms": "Продолжая, вы соглашаетесь с нашей <a href=\"#\" class=\"underline hover:text-[#E50027]\"> Политикой конфиденциальности</a> и <a href=\"#\" class=\"underline hover:text-[#E50027]\"> Условиями использования</a>.",
+    "error": {
+      "allFieldsRequired": "Пожалуйста, введите все поля",
+      "emailTaken": "Этот email уже занят",
+      "invalidCredentials": "Неверный email или пароль",
+      "default": "Произошла ошибка. Попробуйте снова."
+    }
+  },
+  "titles": {
+    "appleTech": "Техника Apple",
+    "brands": "Бренды",
+    "news": "Новости",
+    "affordableConvenience": "Удобство по доступной цене",
+    "beautyAndHealth": "Красота и здоровье",
+    "gamingAndComputers": "Для геймеров",
+    "householdAppliances": "Бытовая техника",
+    "proCameras": "Профессиональные камеры",
+    "sportsGoods": "Спорт товары",
+    "kukmaraSelection": "Kukmara Надежный Выбор",
+    "repairTools": "Инструменты для ремонта и строительства",
+    "seasonalDeals": "Сезонные скидки",
+    "installmentDeals": "Рассрочка"
+  },
+  "common": {
+    "viewAll": "ПОСМОТРЕТЬ ВСЕ",
+    "showAll": "Показать все",
+    "sum": "сум",
+    "months": "мес",
+    "installmentFormat": "{{amount}} сум x {{months}} мес"
+  },
+  "productOfTheDay": {
+    "title": "Товар дня"
+  },
+  "categories": {
+    "tvAudioVideo": "Телевизоры, фото-видео и аудио",
+    "smartphones": "Смартфоны, телефоны, гаджеты",
+    "kitchen": "Все для кухни",
+    "beautyHealth": "Красота и здоровье",
+    "officeHomeGarden": "Все для офиса, дома и сада",
+    "furniture": "Мебель",
+    "repairConstruction": "Все для ремонта и строительства",
+    "gifts": "Подарки и сувениры",
+    "laptopsComputers": "Ноутбуки, принтеры, компьютеры",
+    "appliances": "Бытовая техника",
+    "sports": "Спорт товары",
+    "auto": "Автотовары",
+    "toys": "Игрушки и товары для детей",
+    "gaming": "Для геймеров",
+    "transport": "Электротранспорт",
+    "olchaOffer": "Предложение от Olcha"
+  },
+  "autoCategories": {
+    "bodyParts": "Детали для кузова",
+    "otherParts": "Другие автозапчасти",
+    "audio": "Автомобильное аудио",
+    "videoRadar": "Видеорегистраторы и Радар-детекторы",
+    "accessories": "Автоаксессуары",
+    "washers": "Минимойки и насосы высокого",
+    "steering": "Руль для авто"
+  },
+  "computerCategories": {
+    "laptops": "Ноутбуки",
+    "monitors": "Мониторы",
+    "components": "Компьютерные компоненты",
+    "office": "Оргтехника",
+    "bags": "Сумки и рюкзаки для ноутбуков",
+    "network": "Сетевое оборудование",
+    "monoblock": "Моноблок"
+  },
+  "techCategories": {
+    "tvAudio": "Телевизоры, фото-видео и аудио",
+    "laptopsPrinters": "Ноутбуки, принтеры,",
+    "smartphonesGadgets": "Смартфоны, телефоны, гаджеты,",
+    "appliances": "Бытовая техника",
+    "kitchen": "Все для кухни",
+    "sports": "Спорт товары",
+    "beauty": "Красота и здоровье"
+  },
+  "brands": {
+    "apple": {
+      "name": "Apple",
+      "categories": {
+        "acoustics": "Акустика",
+        "mediaPlayer": "Медиаплеер",
+        "vrGlasses": "Очки виртуальной реальности"
+      }
+    },
+    "samsung": {
+      "name": "Samsung",
+      "categories": {
+        "tvs": "Телевизоры",
+        "monitors": "Мониторы",
+        "ssd": "SSD накопители"
+      }
+    },
+    "sony": {
+      "name": "Sony",
+      "categories": {
+        "tvs": "Телевизоры",
+        "musicSystems": "Музыкальные системы",
+        "acoustics": "Акустика"
+      }
+    },
+    "versace": {
+      "name": "Versace",
+      "categories": {
+        "womenPerfume": "Парфюмерия для женщин",
+        "menPerfume": "Парфюмерия для мужчин",
+        "perfumeSets": "Наборы парфюмерии"
+      }
+    },
+    "xiaomi": {
+      "name": "Xiaomi",
+      "categories": {
+        "tvs": "Телевизоры",
+        "acoustics": "Акустика",
+        "cameras": "Камеры видеонаблюдения"
+      }
+    },
+    "lg": {
+      "name": "LG",
+      "categories": {
+        "tvs": "Телевизоры",
+        "monitors": "Мониторы",
+        "washingMachines": "Стиральные машины"
+      }
+    },
+    "allProducts": "ВСЕ ТОВАРЫ"
+  },
+  "news": {
+    "title": "Новости",
+    "viewsLabel": "просмотров"
+  },
+  "infoText": {
+    "section1": {
+      "heading": "Маркетплейс - Olcha удобный гипермаркет для покупок",
+      "paragraph": "Комфортную жизнь любого человека и удобный быт невозможно представить без современной техники. Рабочие и личные вопросы - в <a href=\"#\" class=\"text-blue-600 hover:underline\">смартфоне</a>, любимые фильмы и сериалы – телевизор, уборка – пылесос, готовка - плита, духовка и множество более мелких, но не менее полезных девайсов. Кроме того, технологии развиваются, а поэтому электроника требует регулярного обновления, хочется испытать новые модели или попросту не хватает мощности имеющихся девайсов. В связи с этим полезно иметь надежное место для покупки бытовой техники. Если Вы пока такового для себя не нашли, мы приглашаем на несколько минут задержаться на нашем сайте. Уверяем, Вы убедитесь, что не зря потратили свое время."
+    },
+    "section2": {
+      "heading": "Где покупать технику в Узбекистане?",
+      "paragraph": "Точек для приобретения электроники в стране немало, но важно, чтобы клиенту подходил ассортимент, цена, общие условия совершения заказа. Что предлагаем мы:"
+    }
+  },
+  "footer": {
+    "appPromo": {
+      "heading": "Наше мобильное приложение доступно в AppGallery, App store и Google play"
+    },
+    "supportPhone": "Телефон поддержки",
+    "address": "Козитарнов, Ташкент",
+    "email": "info@olcha.uz",
+    "information": "Информация",
+    "about": "О компании",
+    "vacancies": "Вакансии",
+    "publicOffer": "Публичная оферта",
+    "returns": "Возврат и обмен товаров",
+    "installmentTerms": "Условия рассрочки",
+    "ecoFriendly": "Eco-friendly",
+    "privacyPolicy": "Политика обработки персональных данных",
+    "paymentAndDelivery": "Оплата и Доставка Товара",
+    "bonuses": "Бонусы и акции",
+    "sellerOffer": "Оферта для продавцов товаров на Olcha.uz",
+    "copyright": "© 2017-2025. OOO \"Olcha store\"",
+    "privacyPolicyLink": "Политика конфиденциальности"
+  },
+  "banners": {
+    "affordableConvenienceAlt": "Удобство по доступной цене",
+    "beautyHealthAlt": "Красота и здоровье",
+    "proCamerasAlt": "Профессиональные камеры",
+    "repairToolsAlt": "Инструменты для ремонта и строительства",
+    "kukmaraAlt": "Kukmara Надежный Выбор",
+    "sportsGoodsAlt": "Спорт товары",
+    "householdAppliancesAlt": "Бытовая техника",
+    "gamingAlt": "Для геймеров",
+    "beautyTech": "Техника для красоты",
+    "cosmetics": "Косметика и парфюмерия",
+    "kitchenNeeds": "Все необходимое для кухни",
+    "fullKitchenRange": "Полный ассортимент для вашей кухни",
+    "repairToolsBanner": "Инструменты для ремонта",
+    "toolsSet": "Набор инструментов",
+    "modernTvs": "Современные телевизоры",
+    "headphonesAcoustics": "Наушники и акустика",
+    "conditioners": "Кондиционеры",
+    "waterCoolers": "Кулеры воды",
+    "generators": "Генераторы"
+  },
+  "theme": {
+    "light": "Светлая",
+    "dark": "Темная",
+    "system": "Системная"
+  }
+}

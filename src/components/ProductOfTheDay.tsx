@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import { useTranslation } from 'react-i18next';
 import ChevronLeftIcon from './icons/ChevronLeftIcon';
 import ChevronRightIcon from './icons/ChevronRightIcon';
 
@@ -55,13 +56,14 @@ const CountdownTimer: React.FC = () => {
 };
 
 const ProductOfTheDay: React.FC = () => {
+  const { t } = useTranslation();
   const [idx, setIdx] = useState(0);
   const cur = products[idx];
 
   return (
     <div className="w-[300px] h-[470px] bg-white border-2 border-red-500 rounded-lg p-4 flex flex-col">
       <div className="flex justify-between items-center mb-3">
-        <h2 className="font-bold text-lg text-gray-900">Товар дня</h2>
+        <h2 className="font-bold text-lg text-gray-900">{t('productOfTheDay.title')}</h2>
         <CountdownTimer />
       </div>
       <div className="relative w-44 h-44 mx-auto mb-3">

@@ -1,5 +1,6 @@
 // File: src/components/Brands.tsx
 import React from 'react';
+import { useTranslation } from 'react-i18next';
 
 interface BrandCategory {
   name: string;
@@ -70,11 +71,14 @@ const brandsData: Brand[] = [
 ];
 
 const BrandCard: React.FC<{ brand: Brand }> = ({ brand }) => (
+const BrandCard: React.FC<{ brand: Brand }> = ({ brand }) => {
+  const { t } = useTranslation();
+  return (
   <div className="bg-gray-100 dark:bg-gray-800 rounded-2xl p-6 flex flex-col h-full">
     <div className="flex justify-between items-center mb-6">
       <img src={brand.logoSrc} alt={brand.name} className="h-8 object-contain" />
       <a href="#" className="text-red-500 dark:text-red-400 text-sm font-semibold flex items-center group">
-        <span>ВСЕ ТОВАРЫ</span>
+        <span>{t('brands.allProducts')}</span>
         <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 ml-1 group-hover:translate-x-1 transition-transform" fill="none" viewBox="0 0 24 24" stroke="currentColor">
           <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2.5} d="M9 5l7 7-7 7" />
         </svg>
@@ -91,14 +95,16 @@ const BrandCard: React.FC<{ brand: Brand }> = ({ brand }) => (
       ))}
     </div>
   </div>
-);
+  );
+};
 
 const Brands: React.FC = () => {
+  const { t } = useTranslation();
   return (
     <div className="max-w-screen-2xl mx-auto px-4 py-6 bg-white dark:bg-black rounded-2xl">
       <div className="flex justify-between items-center mb-6">
-        <h2 className="text-3xl font-bold text-gray-900 dark:text-gray-200">Бренды</h2>
-        <a href="#" className="text-red-500 dark:text-red-400 font-semibold text-lg">ПОСМОТРЕТЬ ВСЕ</a>
+        <h2 className="text-3xl font-bold text-gray-900 dark:text-gray-200">{t('titles.brands')}</h2>
+        <a href="#" className="text-red-500 dark:text-red-400 font-semibold text-lg">{t('common.viewAll')}</a>
       </div>
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
         {brandsData.map((brand, index) => (

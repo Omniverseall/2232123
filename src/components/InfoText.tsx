@@ -1,20 +1,18 @@
 import React from 'react';
+import { useTranslation } from 'react-i18next';
 
 const InfoText: React.FC = () => {
+    const { t } = useTranslation();
     return (
         <div className="max-w-screen-2xl mx-auto px-4 py-6 space-y-8 text-gray-700">
             <div>
-                <h2 className="text-3xl font-bold mb-4">Маркетплейс - Olcha удобный гипермаркет для покупок</h2>
-                <p className="text-base leading-relaxed">
-                    Комфортную жизнь любого человека и удобный быт невозможно представить без современной техники. Рабочие и личные вопросы - в <a href="#" className="text-blue-600 hover:underline">смартфоне</a>, любимые фильмы и сериалы – телевизор, уборка – пылесос, готовка - плита, духовка и множество более мелких, но не менее полезных девайсов. Кроме того, технологии развиваются, а поэтому электроника требует регулярного обновления, хочется испытать новые модели или попросту не хватает мощности имеющихся девайсов. В связи с этим полезно иметь надежное место для покупки бытовой техники. Если Вы пока такового для себя не нашли, мы приглашаем на несколько минут задержаться на нашем сайте. Уверяем, Вы убедитесь, что не зря потратили свое время.
-                </p>
+                <h2 className="text-3xl font-bold mb-4">{t('infoText.section1.heading')}</h2>
+                <p className="text-base leading-relaxed" dangerouslySetInnerHTML={{ __html: t('infoText.section1.paragraph') }} />
             </div>
             <div>
-                <h2 className="text-3xl font-bold mb-4">Где покупать технику в Узбекистане?</h2>
-                <p className="text-base leading-relaxed">
-                    Точек для приобретения электроники в стране немало, но важно, чтобы клиенту подходил ассортимент, цена, общие условия совершения заказа. Что предлагаем мы:
-                </p>
-                <a href="#" className="text-red-500 font-semibold mt-4 inline-block border-b-2 border-red-500 hover:border-red-600 transition">Показать все</a>
+                <h2 className="text-3xl font-bold mb-4">{t('infoText.section2.heading')}</h2>
+                <p className="text-base leading-relaxed">{t('infoText.section2.paragraph')}</p>
+                <a href="#" className="text-red-500 font-semibold mt-4 inline-block border-b-2 border-red-500 hover:border-red-600 transition">{t('common.showAll')}</a>
             </div>
         </div>
     );

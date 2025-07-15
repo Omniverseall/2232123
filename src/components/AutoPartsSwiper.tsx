@@ -1,49 +1,58 @@
 import React, { useState, useEffect } from 'react';
+import { useTranslation } from 'react-i18next';
 import ChevronLeftIcon from './icons/ChevronLeftIcon';
 import ChevronRightIcon from './icons/ChevronRightIcon';
 
 interface AutoCategory {
   name: string;
   imageSrc: string;
+  key: string;
 }
 
-const autoCategories: AutoCategory[] = [
+const AutoPartsSwiper: React.FC = () => {
+  const { t } = useTranslation();
+  const [currentIndex, setCurrentIndex] = useState(VISIBLE_ITEMS);
+  const [isTransitioning, setIsTransitioning] = useState(true);
+  
+  const autoCategories: AutoCategory[] = [
   {
-    name: 'Детали для кузова',
+    name: t('autoCategories.bodyParts'),
+    key: 'bodyParts',
     imageSrc: 'https://olcha.uz/image/132x132/category/RbDum1lvs5E2ucgiNJdRckok7T0fSd4sQAT3EX0lMyvwaujhPgpnOSdUAor8.',
   },
   {
-    name: 'Другие автозапчасти',
+    name: t('autoCategories.otherParts'),
+    key: 'otherParts',
     imageSrc: 'https://olcha.uz/image/132x132/category/ogqZFCBIX10HjQotve3SYHcOs2HYueDelpayni403zGwqsmuXUo88oRFysWa.',
   },
   {
-    name: 'Автомобильное аудио',
+    name: t('autoCategories.audio'),
+    key: 'audio',
     imageSrc: 'https://olcha.uz/image/132x132/category/MSUrr0Epa7dmBKl0xNpJPljxAZf14SPU6j2erlQKRefsQ1lRjmsdJ8D5x4zw.png',
   },
   {
-    name: 'Видеорегистраторы и Радар-детекторы',
+    name: t('autoCategories.videoRadar'),
+    key: 'videoRadar',
     imageSrc: 'https://olcha.uz/image/132x132/category/d4d6t7a1qSh6fBEToCRfVQY5O3w3mMxiChSDsbVALBxjxXGVeDo3qKG10Npi.png',
   },
   {
-    name: 'Автоаксессуары',
+    name: t('autoCategories.accessories'),
+    key: 'accessories',
     imageSrc: 'https://olcha.uz/image/132x132/category/VasWe4boWvAg1agTYMzm9oh5SwRyrYcO8PMjks2Tl7n4RhICTS8eoWzm8yVI.png',
   },
   {
-    name: 'Минимойки и насосы высокого',
+    name: t('autoCategories.washers'),
+    key: 'washers',
     imageSrc: 'https://olcha.uz/image/132x132/category/jsUPuEA9IHAEvkuJAwNGHjYkeVa2yJa6eQWK7EcDIdQMInif8HjQvQ8YlI36.png',
   },
   {
-    name: 'Руль для авто',
+    name: t('autoCategories.steering'),
+    key: 'steering',
     imageSrc: 'https://olcha.uz/image/132x132/category/1T79CVFM1tfWRjatnqv7RsWiFzFhvAeMEhbMZjc1bNceJR7ara6LAMBrjDb5.png',
   },
 ];
 
 const cardBackgroundUrl = 'https://olcha.uz/image/original/homePage/cdn_1/2024-10-21/s20iyffyDK2Dt6sKtfErj84SSYDBi2JiKX2iiHgQG54uHslc0WVde552XUAj.jpg';
-const VISIBLE_ITEMS = 7;
-
-const AutoPartsSwiper: React.FC = () => {
-  const [currentIndex, setCurrentIndex] = useState(VISIBLE_ITEMS);
-  const [isTransitioning, setIsTransitioning] = useState(true);
   
   const items = [...autoCategories.slice(-VISIBLE_ITEMS), ...autoCategories, ...autoCategories.slice(0, VISIBLE_ITEMS)];
 

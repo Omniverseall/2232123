@@ -1,5 +1,6 @@
 // File: src/components/Footer.tsx
 import React from 'react';
+import { useTranslation } from 'react-i18next';
 
 const FacebookIcon = () => (
   <svg className="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
@@ -34,12 +35,13 @@ const AlifIcon = () => (
 
 
 const Footer: React.FC = () => {
+    const { t } = useTranslation();
     return (
         <footer className="bg-gray-100 dark:bg-black text-gray-800 dark:text-gray-300">
             <div className="max-w-screen-2xl mx-auto px-4 py-16">
                 <div className="flex flex-col lg:flex-row items-center justify-around gap-12">
                     <div className="flex-1 max-w-lg text-center lg:text-left">
-                        <h2 className="text-4xl font-bold leading-tight">Наше мобильное приложение доступно в AppGallery, App store и Google play</h2>
+                        <h2 className="text-4xl font-bold leading-tight">{t('footer.appPromo.heading')}</h2>
                         <div className="flex flex-wrap items-center justify-center lg:justify-start gap-5 mt-8">
                             <a href="#"><img src="https://olcha.uz/_nuxt/appstore.BZyLL41o.svg" alt="App Store" className="h-12"/></a>
                             <a href="#"><img src="https://olcha.uz/_nuxt/googleplay.CcPmyygm.svg" alt="Google Play" className="h-12"/></a>
@@ -56,31 +58,31 @@ const Footer: React.FC = () => {
                 <div className="max-w-screen-2xl mx-auto px-4 py-10 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
                     <div>
                         <a href="#" className="text-3xl font-bold text-red-500 mb-6 block">olcha</a>
-                        <p className="font-semibold">Телефон поддержки</p>
+                        <p className="font-semibold">{t('footer.supportPhone')}</p>
                         <p className="text-2xl font-bold mb-4">+998 (71) 202 202 1</p>
-                        <p className="flex items-start"><span className="mt-1 mr-2">⚯</span>Козитарнов, Ташкент</p>
-                        <p className="flex items-center mt-2"><span className="mr-2">✉</span>info@olcha.uz</p>
+                        <p className="flex items-start"><span className="mt-1 mr-2">⚯</span>{t('footer.address')}</p>
+                        <p className="flex items-center mt-2"><span className="mr-2">✉</span>{t('footer.email')}</p>
                     </div>
 
                     <div>
-                        <h3 className="text-lg font-bold text-red-500 mb-4">Информация</h3>
+                        <h3 className="text-lg font-bold text-red-500 mb-4">{t('footer.information')}</h3>
                         <ul className="space-y-2 text-sm">
-                            <li><a href="#" className="hover:text-red-500">О компании</a></li>
-                            <li><a href="#" className="hover:text-red-500">Вакансии</a></li>
-                            <li><a href="#" className="hover:text-red-500">Публичная оферта</a></li>
-                            <li><a href="#" className="hover:text-red-500">Возврат и обмен товаров</a></li>
-                            <li><a href="#" className="hover:text-red-500">Условия рассрочки</a></li>
+                            <li><a href="#" className="hover:text-red-500">{t('footer.about')}</a></li>
+                            <li><a href="#" className="hover:text-red-500">{t('footer.vacancies')}</a></li>
+                            <li><a href="#" className="hover:text-red-500">{t('footer.publicOffer')}</a></li>
+                            <li><a href="#" className="hover:text-red-500">{t('footer.returns')}</a></li>
+                            <li><a href="#" className="hover:text-red-500">{t('footer.installmentTerms')}</a></li>
                         </ul>
                     </div>
 
                     <div>
                         <h3 className="text-lg font-bold text-transparent mb-4">.</h3>
                          <ul className="space-y-2 text-sm">
-                            <li><a href="#" className="hover:text-red-500">Eco-friendly</a></li>
-                            <li><a href="#" className="hover:text-red-500">Политика обработки персональных данных</a></li>
-                            <li><a href="#" className="hover:text-red-500">Оплата и Доставка Товара</a></li>
-                            <li><a href="#" className="hover:text-red-500">Бонусы и акции</a></li>
-                            <li><a href="#" className="hover:text-red-500">Оферта для продавцов товаров на Olcha.uz</a></li>
+                            <li><a href="#" className="hover:text-red-500">{t('footer.ecoFriendly')}</a></li>
+                            <li><a href="#" className="hover:text-red-500">{t('footer.privacyPolicy')}</a></li>
+                            <li><a href="#" className="hover:text-red-500">{t('footer.paymentAndDelivery')}</a></li>
+                            <li><a href="#" className="hover:text-red-500">{t('footer.bonuses')}</a></li>
+                            <li><a href="#" className="hover:text-red-500">{t('footer.sellerOffer')}</a></li>
                         </ul>
                     </div>
                     
@@ -99,10 +101,10 @@ const Footer: React.FC = () => {
 
             <div className="max-w-screen-2xl mx-auto px-4 py-4 border-t border-gray-200 dark:border-gray-700">
                 <div className="flex flex-col md:flex-row justify-between items-center text-sm text-gray-500 dark:text-gray-400">
-                    <p>© 2017-2025. OOO "Olcha store"</p>
+                    <p>{t('footer.copyright')}</p>
                     <div className="flex space-x-6 my-4 md:my-0">
-                        <a href="#" className="hover:text-red-500">Публичная оферта</a>
-                        <a href="#" className="hover:text-red-500">Политика конфиденциальности</a>
+                        <a href="#" className="hover:text-red-500">{t('footer.publicOffer')}</a>
+                        <a href="#" className="hover:text-red-500">{t('footer.privacyPolicyLink')}</a>
                     </div>
                     <div className="flex space-x-4">
                         <a href="#" className="hover:text-red-500"><FacebookIcon /></a>

@@ -70,7 +70,6 @@ const brandsData: Brand[] = [
   },
 ];
 
-const BrandCard: React.FC<{ brand: Brand }> = ({ brand }) => (
 const BrandCard: React.FC<{ brand: Brand }> = ({ brand }) => {
   const { t } = useTranslation();
   return (

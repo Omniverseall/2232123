@@ -6,7 +6,10 @@ import { useTheme } from '../context/ThemeContext';
 // Тип темы, который используется в логике
 type Theme = 'light' | 'dark' | 'system';
 
-// Словарь для перевода системных значений в русский текст
+const ThemeSwitcher: React.FC = () => {
+    const { t } = useTranslation();
+    const { theme, setTheme } = useTheme();
+
     const toggleTheme = () => {
         // Массив для переключения должен содержать системные значения
         const themes: Theme[] = ['light', 'dark', 'system'];
